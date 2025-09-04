@@ -1,11 +1,13 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="{% static 'libs/daisyui/daisyui.css' %}" rel="stylesheet" type="text/css" />
+    <script src="{% static 'libs/tailwindcss/dist/index.global.js' %}"></script>
     <title>Students</title>
 </head>
 
@@ -28,7 +30,6 @@
                         <li><a href="{% url 'contact' %}">Contact</a></li>
                         <li><a href="{% url 'students_list' %}">Students</a></li>
                         <li><a href="{% url 'subjects_list' %}">Subjects</a></li>
-
                     </ul>
                 </div>
                 <a class="btn btn-ghost text-xl">daisyUI</a>
